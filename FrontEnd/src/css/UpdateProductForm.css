@@ -1,0 +1,114 @@
+/* Full Page Styling */
+body {
+  background: url('../assets/myimages/Module-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.update-product-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 90px;
+}
+
+/* Add Product Container */
+.update-product-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  width: 100%;
+  background: white; /* Light transparent effect */
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section - Form */
+.update-product-form-section {
+  width: 60%;
+  padding: 20px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.update-product-form-section h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  margin-left: 200px;
+  font-weight: bold;
+}
+
+/* Form Container */
+.update-product-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-product-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.update-product-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(72, 74, 84, 0.2);
+  color: rgb(121, 120, 120);
+  outline: none;
+  width: 600px;
+}
+
+.update-product-input::placeholder {
+  color: rgba(122, 122, 122, 0.6);
+}
+
+/* Buttons */
+.update-product-btn-group {
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+.update-product-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-right: 40px;
+  width: 150px;
+}
+
+.update-product-btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.update-product-btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .update-product-wrapper {
+      flex-direction: column;
+      width: 90%;
+  }
+
+  .update-product-form-section {
+   width: 100%;
+  }
+}

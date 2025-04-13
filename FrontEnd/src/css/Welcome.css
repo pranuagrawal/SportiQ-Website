@@ -1,0 +1,64 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+.welcome-hero-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+/* Background Video */
+.welcome-hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay effect */
+.welcome-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Hero content */
+.welcome-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.welcome-hero-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: #fbf9f2;
+}
+
+/* Special styling for "SportiQ" */
+.brand-name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: #fbf9f2; /* Gold color */
+  text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-hero-title {
+    font-size: 2.5rem;
+  }
+}

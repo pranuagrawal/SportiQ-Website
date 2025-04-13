@@ -1,0 +1,142 @@
+/* Apply Background Image */
+body {
+  background: url('../assets/myimages/Module-bg.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.admin-product-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  backdrop-filter: blur(8px); /* Blurred effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 90px;
+}
+
+/* Heading */
+.admin-product-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #fff;
+}
+
+/* Product Table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  backdrop-filter: blur(5px); /* Blurred effect for table */
+}
+
+/* Transparent Table Styling */
+.product-table thead {
+  background: rgba(31, 61, 122, 0.8); /* Semi-transparent header */
+  color: white;
+}
+
+.product-table tbody {
+  background: white;
+  color: #26384a;
+}
+
+/* Table Borders */
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Product Image */
+.product-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Edit & Delete Buttons */
+.edit-btn,
+.delete-btn {
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s;
+  margin: 5px;
+}
+.product-table th:nth-child(6),
+.product-table td:nth-child(6) {
+  padding: 6px;
+  width:250px;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: #1ba303;
+  color: white;
+  margin-right: 20px;
+}
+
+.edit-btn:hover {
+  background: #1a9502;
+}
+
+.edit-icon {
+  width: 20px;  /* Adjust size as needed */
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #d9534f;
+  color: white;
+  margin-left: 20px;
+}
+
+.delete-btn:hover {
+  background: #c9302c;
+}
+
+.delete-icon {
+  width: 20px;  /* Adjust size if needed */
+  height: 20px;
+  vertical-align: middle;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-product-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .product-table th,
+  .product-table td {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .add-product-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

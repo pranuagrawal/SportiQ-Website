@@ -1,0 +1,113 @@
+/* Admin Orders Container */
+.admin-orders-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.admin-orders-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Filter Buttons */
+.admin-orders-button-group {
+    margin-bottom: 20px;
+}
+
+.admin-orders-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    background: #ddd;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.admin-orders-btn.active,
+.admin-orders-btn:hover {
+    background: #28a745;
+    color: white;
+}
+
+/* Table Styling */
+.admin-orders-table-container {
+    overflow-x: auto;
+}
+
+.admin-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-orders-table th,
+.admin-orders-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.admin-orders-table th {
+    background: #3d566f;
+    color: white;
+}
+
+.admin-orders-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Select Dropdown */
+.admin-orders-select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Deliver Button */
+.admin-orders-deliver-btn {
+    background: #28a745;
+    color: white;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-orders-deliver-btn:hover {
+    background: #218838;
+}
+
+/* Loading and No Orders Message */
+.admin-orders-loading,
+.admin-orders-no-orders {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-orders-container {
+        padding: 15px;
+    }
+
+    .admin-orders-table th,
+    .admin-orders-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

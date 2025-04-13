@@ -1,0 +1,61 @@
+/* Make slider full-screen */
+.slider-container {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  overflow: hidden;
+  margin-top: 78px;
+}
+
+/* Ensure images fill the screen */
+.slide img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover; /* Ensure the image covers the screen */
+}
+
+/* Text overlay */
+.slider-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 170px;
+}
+
+.slider-text h1{
+  color:rgb(255, 255, 255);
+  font-size: 50px;
+}
+/* Shop Now button */
+.shop-btn {
+  background-color: #3d5772;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.shop-btn:hover {
+  background-color: #2c3e50;
+}
+
+/* Footer */
+.user-dashboard-footer {
+  background: #9b9a9ab7;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: 0;
+  margin-top: 80px;
+}

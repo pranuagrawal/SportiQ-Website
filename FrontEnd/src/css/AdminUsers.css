@@ -1,0 +1,58 @@
+/* Admin Users Page Styling */
+.admin-users-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.admin-users-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.admin-users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.admin-users-table th, .admin-users-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-users-table th {
+    background-color: #3d566f;
+    color: white;
+}
+
+.admin-users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-users-table tr:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .admin-users-container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .admin-users-table th, .admin-users-table td {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,154 @@
+/* Admin Dashboard Container */
+.admin-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: url("../assets/myimages/Module-bg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+    margin-top: 70px;
+}
+
+/* Back Button */
+.admin-dashboard-back-btn {
+    background: #435c75;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.admin-dashboard-back-btn:hover {
+    background: #2c3e50;
+}
+
+/* Cards Container */
+.admin-dashboard-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+}
+
+/* Dashboard Card */
+.admin-dashboard-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1); /* Transparent Effect */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    background: white;
+}
+
+.admin-dashboard-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Icon */
+.admin-dashboard-icon {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Card Title */
+.admin-dashboard-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+/* Card Value */
+.admin-dashboard-card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard-btn-group {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 10px;
+}
+
+/* Card Buttons */
+.admin-dashboard-card-btn {
+    background: #3f5974;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.admin-dashboard-card-btn:hover {
+    background: #2c3e50;
+}
+
+/* Orders Section */
+.admin-dashboard-orders-section {
+    background: rgba(248, 244, 244, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1000px;
+    color: white;
+}
+
+.admin-dashboard-orders-section h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;;
+}
+
+/* Orders Table */
+.admin-dashboard-orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    background: white;
+}
+
+.admin-dashboard-orders-table th, .admin-dashboard-orders-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;    
+}
+
+.admin-dashboard-orders-table td{
+    color:#26384a;
+}
+
+.admin-dashboard-orders-table th {
+    background: rgba(255, 255, 255, 0.2);
+    background: #435c75;
+}
+
+/* Footer */
+.admin-dashboard-footer {
+    background: #9b9a9ac8;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+}

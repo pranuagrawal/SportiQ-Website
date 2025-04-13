@@ -1,0 +1,114 @@
+/* Background Styling */
+body {
+  background: url('../assets/myimages/Module-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Products Container */
+.user-products-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  margin-top: 80px;
+}
+
+.user-products-content {
+  width: 90%;
+  max-width: 1400px;
+  background: rgba(255, 255, 255, 0.666); /* Light transparent background */
+  backdrop-filter: blur(8px); /* Blurred effect */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.user-products-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.user-products-header-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Search and Sort Container */
+.user-products-search-container {
+  display: flex; /* Aligns items in a row */
+  justify-content: space-between; /* Ensures space between search input and dropdown */
+  gap: 50px; /* Optional: Adds space between the elements */
+  align-items: center; /* Aligns items vertically */
+  margin-bottom: 15px;
+}
+
+.user-products-search-input {
+  flex: 1; /* Takes available space */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(72, 74, 84, 0.2);
+  outline: none;
+  width: 600px;
+}
+
+.user-products-sort-dropdown {
+  flex: 0 0 200px; /* Fixed width for the dropdown */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(72, 74, 84, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.user-products-category-dropdown {
+  flex: 0 0 200px; /* Fixed width for the dropdown */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(72, 74, 84, 0.2);
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Products Grid */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* No Products Message */
+.user-products-no-results {
+  color: #2c3e50;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-products-search-input {
+      width: 90%;
+  }
+
+  .user-products-sort-dropdown {
+      width: 90%;
+  }
+}

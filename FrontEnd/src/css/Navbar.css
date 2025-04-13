@@ -1,0 +1,187 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #2c3e50; /* Dark blue background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: fixed !important;  /* Fixes navbar */
+  top: 0;           /*  Keeps it at the top */
+  left: 0;
+  width: 100%;      /*  Full width */
+  z-index: 1000;    /* Ensures it's above other elements */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.logo-img {
+  width: 200px; /* Adjust size as needed */
+  height: 60px;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Cart and Wishlist Count Badge Styling */
+.cart-count, .wishlist-count {
+  background-color: white; /* Orange color for the badge */
+  color: #2c3e50;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 5px 8px;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  min-width: 20px;
+  min-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Dropdown */
+.profile-container {
+  position: relative;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  padding: 8px 12px;
+  transition: 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  list-style: none;
+  padding: 0;
+  width: 150px;
+  z-index: 1000;
+}
+
+.profile-dropdown li {
+  padding: 10px;
+  text-align: left;
+}
+
+.profile-dropdown li a,
+.profile-dropdown li button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+}
+
+.profile-dropdown li a:hover,
+.profile-dropdown li button:hover {
+  background-color: #f0f0f0;
+  border-radius: 3px;
+}
+
+.profile-img {
+  width: 25px;  /* Adjust size as needed */
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 3px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.cart-img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  margin-right: 3px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.wishlist-img {
+  width: 25px; /* Adjust size as needed */
+  height: 25px;
+  margin-right: 3px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  color: red;
+}
+
+.logout-btn:hover {
+  background-color: #ffecec;
+  border-radius: 3px;
+}
+
+/* Cart Icon */
+.nav-links .cart-link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nav-links .cart-link:hover {
+  color: #f39c12; /* Orange hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-dropdown {
+    right: auto;
+    left: 0;
+  }
+}

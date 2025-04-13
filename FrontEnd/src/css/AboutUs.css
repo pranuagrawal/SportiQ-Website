@@ -1,0 +1,60 @@
+/* About Us Section */
+.about-us {
+  display: flex;
+  align-items: flex-start; /* Align content towards the top */
+  justify-content: flex-start; /* Align content to the left */
+  height: 100vh;
+  background: url('../assets/myimages/about1.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 5%;
+  margin-top: 70px;
+  position: fixed;
+  width: 100%;
+}
+
+/* Text Container (No Background Box) */
+.aboutus-text-container {
+  max-width: 600px;
+  text-align: left;
+  margin-top: 5%; /* Pushes text towards the top */
+}
+
+/* Title Styling */
+.aboutus-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff; /* White Title */
+}
+
+/* Paragraph Styling */
+.aboutus-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff; /* White Text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us {
+    justify-content: center; /* Center content on smaller screens */
+    padding: 10%;
+  }
+
+  .aboutus-text-container {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 10%; /* Adjust text positioning for mobile */
+  }
+
+  .aboutus-title {
+    font-size: 2rem;
+  }
+
+  .aboutus-text {
+    font-size: 1rem;
+  }
+}

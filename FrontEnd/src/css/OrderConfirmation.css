@@ -1,0 +1,65 @@
+/* Order Confirmation Page Styling */
+.order-confirmation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.518); /* Light transparent background */
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.order-confirmation-container h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+.order-confirmation-container p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.order-confirmed {
+    width: 120px; /* Adjust image size */
+    height: auto;
+    animation: fadeInScale 0.6s ease-in-out; /* Smooth entrance */
+}
+
+/* Animation for the Success Tick */
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-confirmation-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .order-confirmation-container h2 {
+        font-size: 22px;
+    }
+
+    .order-confirmation-container p {
+        font-size: 14px;
+    }
+
+    .order-confirmed {
+        width: 100px;
+    }
+}

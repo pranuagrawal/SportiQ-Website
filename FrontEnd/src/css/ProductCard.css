@@ -1,0 +1,152 @@
+/* Parent container to align Product Cards */
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  justify-content: space-between; /* Distributes cards evenly */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Product Card */
+.productcard-container {
+  width: 23.33%; /* Fixed width for 3 cards per row */
+  display: flex;
+  justify-content: center;
+  min-width: 320px; /* Prevents shrinking below a certain width */
+  flex-grow: 0; /* Prevents growth beyond the fixed width */
+}
+
+/* Product card content */
+.productcard {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures it takes the full width of the container */
+  margin-top: 20px;
+}
+
+.productcard:hover {
+  transform: scale(1.05);
+}
+
+/* Image container */
+.productcard-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #f8f9fa;
+}
+
+.productcard-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+
+/* Card body */
+.productcard-body {
+  padding: 15px;
+}
+
+.productcard-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.productcard-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.productcard-category {
+  font-size: 0.85rem;
+}
+
+.productcard-price {
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Rating and Wishlist */
+.productcard-rating {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.productcard-star-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+}
+
+.productcard-wishlist-icon {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.productcard-wishlist-icon img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+}
+
+.productcard-wishlist-icon img:hover {
+  transform: scale(1.1);
+}
+
+/* Popup Notification */
+.productcard-popup {
+  position: fixed;
+  top:0%;
+  right:0%;
+  transform: translateX(-50%);
+  background-color: #7b7979cb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  z-index: 1000;
+  animation: fadeInOut 2s ease-in-out;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.productcard-popup-icon {
+  width: 20px;
+}
+
+/* Animation for popup */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .productcard-container {
+    width: 33.33%; /* 3 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .productcard-container {
+    width: 50%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .productcard-container {
+    width: 100%; /* 1 card per row */
+  }
+}
