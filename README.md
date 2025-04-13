@@ -1,6 +1,8 @@
-🛒** SportiQ-Website**
+**🛒 SportiQ-Website**
+
 SportiQ is a sports e-commerce website where users can browse products, manage their cart, and complete orders. Admins can manage products and view order details.
 
+_____________________________________________________________________________________________________________________________________________________________________
 
 **🛠 Tech Stack**
 Frontend: React.js (Vite), Bootstrap/Material-UI
@@ -11,8 +13,10 @@ Authentication: JWT (JSON Web Token)
 
 Deployment: Vercel/Netlify (Frontend), Render/Heroku (Backend)
 
+_____________________________________________________________________________________________________________________________________________________________________
+
 **💻 Installation**
-Frontend
+**Frontend**
 Clone the repo:
 
 
@@ -24,9 +28,9 @@ Install dependencies:
 npm install
 Start the development server:
 
-
 npm start
-Backend
+_____________________________________________________________________________________________________________________________________________________________________
+**Backend**
 Clone the repo:
 
 
